@@ -21,7 +21,7 @@ public class FindContacts {
 		driver.findElement(By.linkText("Email")).click();
 		driver.findElement(By.name("emailAddress")).sendKeys("babu@testleaf.com");
 		driver.findElement(By.className("x-btn-text")).click();
-		driver.close();
+		//driver.close();
 	}
 
 }
