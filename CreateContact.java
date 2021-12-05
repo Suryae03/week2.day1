@@ -19,9 +19,10 @@ public class CreateContact {
 		driver.findElement(By.linkText("Contacts")).click();
 		driver.findElement(By.linkText("Create Contact")).click();
 		driver.findElement(By.id("firstNameField")).sendKeys("surya");
-		System.out.println("surya");
 		driver.findElement(By.id("lastNameField")).sendKeys("esh");
 		driver.findElement(By.name("submitButton")).click();
+		String text = driver.findElement(By.id("viewContact_firstName_sp")).getText();
+		System.out.println(text);
 		String title = driver.getTitle();
 		System.out.println(title);
 		driver.close();
